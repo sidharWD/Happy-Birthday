@@ -24,6 +24,18 @@
         .float-animation-medium {
             animation: float-medium 3s ease-in-out infinite;
         }
+        @keyframes fadeInScaleUp {
+            0% { opacity: 0; transform: scale(0.9) translateY(20px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .fade-in-scale-up {
+            animation: fadeInScaleUp 1s ease-out forwards;
+        }
+        @keyframes subtlePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        .subtle-pulse { animation: subtlePulse 3s ease-in-out infinite; }
     </style>
 </head>
 <body class="bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100 min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
@@ -40,11 +52,11 @@
         <span class="absolute top-[30%] left-[40%] text-4xl float-animation-slow" style="animation-delay: 4s">🎨</span>
     </div>
 
-    <div class="max-w-lg w-full relative z-10">
+    <div class="max-w-lg w-full relative z-10 fade-in-scale-up">
         <div class="bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500 relative">
             <!-- Decorative elements -->
             <div class="absolute top-0 left-0 w-20 h-20">
-                <div class="animate-bounce">
+                <div class="animate-bounce" style="animation-delay: 0.2s">
                     <span class="text-4xl">🎈</span>
                 </div>
             </div>
@@ -57,7 +69,7 @@
             <!-- Card Content -->
             <div class="px-8 py-12 text-center relative overflow-hidden">
                 <div class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text">
-                    <h1 class="fancy-font text-6xl mb-6">Happy Birthday!</h1>
+                    <h1 class="fancy-font text-6xl mb-6 inline-block subtle-pulse">Happy Birthday!</h1>
                 </div>
                 
                 <div class="space-y-6">
