@@ -1,19 +1,64 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title> Birthday Wishes </title>
-	<link rel="stylesheet" href="1.9/w3.css">
-	<style type="text/css">
-		form {
-			width:50%;
-		}
-		.w3-label {
-			font-size: 20px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .fancy-font {
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
 </head>
-<body>
-	<h1>first page</h1>
-	<h2>second second</h2>
-	
+<body class="bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-lg w-full">
+        <div class="bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500 relative">
+            <!-- Decorative elements -->
+            <div class="absolute top-0 left-0 w-20 h-20">
+                <div class="animate-bounce">
+                    <span class="text-4xl">🎈</span>
+                </div>
+            </div>
+            <div class="absolute top-0 right-0 w-20 h-20">
+                <div class="animate-bounce" style="animation-delay: 0.5s">
+                    <span class="text-4xl">🎈</span>
+                </div>
+            </div>
+
+            <!-- Card Content -->
+            <div class="px-8 py-12 text-center relative overflow-hidden">
+                <div class="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text">
+                    <h1 class="fancy-font text-6xl mb-6">Happy Birthday!</h1>
+                </div>
+                
+                <div class="space-y-6">
+                    <p class="text-2xl text-gray-700 leading-relaxed">
+                        May your day be filled with joy, laughter, and unforgettable moments! 
+                        Wishing you a truly magical celebration! 🎉
+                    </p>
+                    
+                    <div class="flex justify-center space-x-4 text-4xl my-8">
+                        <span class="animate-bounce" style="animation-delay: 0s">🎁</span>
+                        <span class="animate-bounce" style="animation-delay: 0.2s">🎂</span>
+                        <span class="animate-bounce" style="animation-delay: 0.4s">✨</span>
+                    </div>
+
+                    <div class="mt-8">
+                        <p class="text-xl text-gray-600">With love and best wishes,</p>
+                        <p class="fancy-font text-2xl text-purple-600 mt-2">Your Friend</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom decorative wave -->
+            <div class="absolute bottom-0 left-0 right-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="text-pink-100">
+                    <path fill="currentColor" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
